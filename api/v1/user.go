@@ -2,11 +2,11 @@ package v1
 
 import (
 	"net/http"
-	"qa_go/api"
-	"qa_go/cache"
-	"qa_go/model"
-	"qa_go/serializer"
-	v1 "qa_go/service/v1/user"
+	"qa/api"
+	"qa/cache"
+	"qa/model"
+	"qa/serializer"
+	v1 "qa/service/v1/user"
 
 	"github.com/gin-gonic/gin"
 	//"github.com/go-delve/delve/service"

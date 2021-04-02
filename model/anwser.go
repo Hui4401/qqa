@@ -1,8 +1,9 @@
 package model
 
 import (
+	"qa/cache"
+
 	"gorm.io/gorm"
-	"qa_go/cache"
 )
 
 // Answer 回答模型

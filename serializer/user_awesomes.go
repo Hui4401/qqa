@@ -1,6 +1,6 @@
 package serializer
 
-import "qa_go/model"
+import "qa/model"
 
 // 点赞列表的每一项数据
 type AwesomesData struct {

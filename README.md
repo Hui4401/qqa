@@ -1,4 +1,4 @@
-# qa_go
+# qa
 
 工程实践，一个类似知乎的问答系统（服务端），正在开发中。。
 
@@ -56,7 +56,7 @@
 ### 1. 获取代码
 
 ```
-git clone https://github.com/zjczz/qa_go
+git clone https://github.com/Hui4401/qa
 ```
 
 ### 2. 修改环境变量配置

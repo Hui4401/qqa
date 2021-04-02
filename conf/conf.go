@@ -2,8 +2,8 @@ package conf
 
 import (
 	"os"
-	"qa_go/cache"
-	"qa_go/model"
+	"qa/cache"
+	"qa/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"

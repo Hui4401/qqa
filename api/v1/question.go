@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"qa_go/api"
-	"qa_go/serializer"
-	v1 "qa_go/service/v1/question"
+	"qa/api"
+	"qa/serializer"
+	v1 "qa/service/v1/question"
 	"strconv"
 
 	"github.com/gin-gonic/gin"

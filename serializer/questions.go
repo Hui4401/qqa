@@ -1,8 +1,8 @@
 package serializer
 
 import (
-	"qa_go/cache"
-	"qa_go/model"
+	"qa/cache"
+	"qa/model"
 	"strconv"
 )
 

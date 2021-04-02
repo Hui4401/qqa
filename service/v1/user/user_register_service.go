@@ -3,8 +3,8 @@ package v1
 import (
 	"fmt"
 	"math/rand"
-	"qa_go/model"
-	"qa_go/serializer"
+	"qa/model"
+	"qa/serializer"
 )
 
 // UserRegisterService 管理用户注册服务

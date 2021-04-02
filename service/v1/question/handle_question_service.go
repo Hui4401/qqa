@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"qa_go/cache"
-	"qa_go/model"
-	"qa_go/serializer"
+	"qa/cache"
+	"qa/model"
+	"qa/serializer"
 	"strconv"
 )
 

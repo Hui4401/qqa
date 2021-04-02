@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"qa_go/middleware/auth"
-	"qa_go/model"
-	"qa_go/serializer"
+	"qa/middleware/auth"
+	"qa/model"
+	"qa/serializer"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"

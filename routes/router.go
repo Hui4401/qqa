@@ -1,10 +1,10 @@
 package routes
 
 import (
-	"qa_go/api"
-	v1 "qa_go/api/v1"
+	"qa/api"
+	v1 "qa/api/v1"
 
-	"qa_go/middleware/auth"
+	"qa/middleware/auth"
 
 	"github.com/gin-gonic/gin"
 )

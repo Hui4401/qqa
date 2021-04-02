@@ -1,6 +1,6 @@
 package serializer
 
-import "qa_go/model"
+import "qa/model"
 
 //AnswerData 单个回答信息
 type AnswerData struct {

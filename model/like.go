@@ -2,12 +2,13 @@ package model
 
 import (
 	"fmt"
-	"github.com/go-redis/redis"
-	"gorm.io/gorm"
-	"qa_go/cache"
+	"qa/cache"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/go-redis/redis"
+	"gorm.io/gorm"
 )
 
 // UserLike 用户点赞表

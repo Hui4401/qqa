@@ -1,8 +1,8 @@
 package v1
 
 import (
-	"qa_go/model"
-	"qa_go/serializer"
+	"qa/model"
+	"qa/serializer"
 )
 
 // 获取回答列表

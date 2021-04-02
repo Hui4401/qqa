@@ -2,14 +2,14 @@ package api
 
 import (
 	"net/http"
-	"qa_go/model"
+	"qa/model"
 
 	"github.com/gin-gonic/gin"
 )
 
 // Index 主页
 func Index(c *gin.Context) {
-	c.String(http.StatusOK, "======= https://github.com/zjczz/qa_go =======")
+	c.String(http.StatusOK, "======= https://github.com/zjczz/qa =======")
 }
 
 // CurrentUser 获取当前用户

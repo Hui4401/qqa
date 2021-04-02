@@ -2,9 +2,9 @@ package auth
 
 import (
 	"net/http"
-	"qa_go/cache"
-	"qa_go/conf"
-	"qa_go/serializer"
+	"qa/cache"
+	"qa/conf"
+	"qa/serializer"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"

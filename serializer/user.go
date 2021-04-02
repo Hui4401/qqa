@@ -1,6 +1,6 @@
 package serializer
 
-import "qa_go/model"
+import "qa/model"
 
 // UserData 单个用户信息
 type UserData struct {

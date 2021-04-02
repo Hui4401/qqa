@@ -3,7 +3,7 @@ package model
 import (
 	"strconv"
 
-	"qa_go/cache"
+	"qa/cache"
 
 	"time"
 

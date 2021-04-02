@@ -2,7 +2,7 @@ package cron
 
 import (
 	"fmt"
-	"qa_go/model"
+	"qa/model"
 
 	"github.com/robfig/cron"
 )

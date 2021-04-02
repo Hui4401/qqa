@@ -1,9 +1,9 @@
 package main
 
 import (
-	"qa_go/conf"
-	"qa_go/cron"
-	"qa_go/routes"
+	"qa/conf"
+	"qa/cron"
+	"qa/routes"
 )
 
 func main() {

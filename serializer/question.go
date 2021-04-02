@@ -1,6 +1,6 @@
 package serializer
 
-import "qa_go/model"
+import "qa/model"
 
 // 单个问题
 type QuestionData struct {

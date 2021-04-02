@@ -1,46 +1,31 @@
 version: '3'
 services:
   mysql:
-    image: mysql:5.7.31
-    container_name: mysql
+    image: mysql:8
+    container_name: qa-mysql
     restart: always
-    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: qwerdfb
     volumes:
-      - /var/docker/mysql/data:/var/lib/mysql
-      - /var/docker/mysql/config:/etc/mysql/conf.d
+      - /tmp/qa/mysql/data:/var/lib/mysql
   redis:
-    image: redis:6.0.6
-    container_name: myRedis
+    image: redis:6
+    container_name: qa-redis
     restart: always
     ports:
-       - 6379:6379
+      - 6379:6379
     volumes:
-      - /var/redis/data:/data:rw
-      - /usr/local/redis/redis.conf:/etc/redis/redis.conf:rw
-    command:
-      redis-server /etc/redis/redis.conf
-  rabbitmq:
-    image: rabbitmq:management
-    container_name: myrabbitmq
-    hostname: myrabbitmq
-    ports:
-      - 5672:5672
-      - 15672:15672
-    volumes:
-       - /var/docker/rabbitmq/data:/var/lib/rabbitmq
-    environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=123456
-  qa_go:
+      - /tmp/qa/redis/data:/data
+  qa:
+    container_name: qa
     build: .
     depends_on:
       - mysql
       - redis
-      - rabbitmq
+    environment:
+      - MYSQL_URL=root:qwerdfb@tcp(mysql:3306)/qa?charset=utf8mb4&parseTime=True&loc=Local
+      - REDIS_URL=redis://redis:6379/0
     ports:
-      - "8000:8000"
+      - 8000:8000

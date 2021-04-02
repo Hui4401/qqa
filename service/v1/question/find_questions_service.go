@@ -1,8 +1,8 @@
 package v1
 
 import (
-	"qa_go/cache"
-	"qa_go/serializer"
+	"qa/cache"
+	"qa/serializer"
 )
 
 // 获取首页问题列表，并加载其高赞回答
