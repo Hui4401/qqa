@@ -9,7 +9,7 @@ import (
 
 // Index 主页
 func Index(c *gin.Context) {
-	c.String(http.StatusOK, "======= https://github.com/zjczz/qa =======")
+	c.String(http.StatusOK, "======= https://github.com/Hui4401/qa =======")
 }
 
 // CurrentUser 获取当前用户
