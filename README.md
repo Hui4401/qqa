@@ -56,7 +56,7 @@
 ### 1. 获取代码
 
 ```
-git clone https://github.com/Hui4401/qa
+git clone https://github.com/Hui4401/qa.git
 ```
 
 ### 2. 修改环境变量配置
