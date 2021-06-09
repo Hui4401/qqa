@@ -17,8 +17,8 @@ func StartSchedule() {
 		model.FreeDeletedAnswersRecord()
 	})
 
-	// 每10分钟同步热榜信息
-	addCronFunc(c, "@every 10m", func() {
+	// 每30分钟同步热榜信息
+	addCronFunc(c, "@every 30m", func() {
 		model.SyncHotQuestions()
 	})
 
