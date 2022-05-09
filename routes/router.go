@@ -1,12 +1,11 @@
 package routes
 
 import (
+	"github.com/gin-gonic/gin"
+
 	"qa/api"
 	v1 "qa/api/v1"
-
 	"qa/middleware/auth"
-
-	"github.com/gin-gonic/gin"
 )
 
 // NewRouter 路由配置
