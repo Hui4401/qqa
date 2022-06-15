@@ -14,5 +14,7 @@ func main() {
 
 	r := routes.NewRouter()
 
-	r.Run(":8000")
+	if err := r.Run(":8000"); err != nil {
+		panic("run server error")
+	}
 }

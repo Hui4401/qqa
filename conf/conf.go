@@ -2,16 +2,12 @@ package conf
 
 import (
 	"os"
-	"qa/cache"
-	"qa/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-)
 
-// 全局参数
-var (
-	JwtSecretKey = []byte(os.Getenv("JWT_SECRET_KEY"))
+	"qa/cache"
+	"qa/model"
 )
 
 // Init 初始化配置项

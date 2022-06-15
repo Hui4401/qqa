@@ -3,9 +3,10 @@ package auth
 import (
 	"net/http"
 	"qa/cache"
-	"qa/conf"
 	"qa/serializer"
 	"time"
+
+	"os"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
@@ -18,7 +19,7 @@ const (
 
 var (
 	// jwt加密秘钥
-	JwtSecretKey = conf.JwtSecretKey
+	JwtSecretKey = []byte(os.Getenv("JWT_SECRET_KEY"))
 )
 
 // jwt编码的结构体
